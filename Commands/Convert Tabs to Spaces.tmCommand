@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>beforeRunningCommand</key>
+	<string>nop</string>
+	<key>command</key>
+	<string>#!/usr/bin/env ruby
+
+spaces =  ' ' * ENV['TM_TAB_SIZE'].to_i
+STDIN.read.each do |line|
+  line.sub!(/(\t+)/) { |c| spaces * c.length }
+  line.sub!(/(\s+)$/, "\n")
+  puts line
+end
+</string>
+	<key>input</key>
+	<string>document</string>
+	<key>name</key>
+	<string>Strip Trailing Whitespace / Convert Tabs to Spaces</string>
+	<key>output</key>
+	<string>replaceDocument</string>
+	<key>uuid</key>
+	<string>B7C3A928-9408-4328-815A-40D310B2606F</string>
+</dict>
+</plist>

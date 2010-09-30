@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>beforeRunningCommand</key>
+	<string>nop</string>
+	<key>command</key>
+	<string>#!/usr/bin/env ruby
+
+# just to remind you of some useful environment variables
+# see Help / Environment Variables for the full list
+# echo File: "$TM_FILEPATH"
+# echo Word: "$TM_CURRENT_WORD"
+# echo Selection: "$TM_SELECTED_TEXT"
+
+lines, max_length = [], 0
+STDIN.read.each do |line|
+  lines &lt;&lt; line[0..-2]
+  max_length = [line.length, max_length].max
+end
+
+lines.each do |line|
+  puts (line + (' ' * (max_length - line.length - 1)))
+end
+
+</string>
+	<key>fallbackInput</key>
+	<string>none</string>
+	<key>input</key>
+	<string>selection</string>
+	<key>name</key>
+	<string>Pad with whitespace to end of longest line</string>
+	<key>output</key>
+	<string>replaceSelectedText</string>
+	<key>uuid</key>
+	<string>6A23EF5A-95D9-4F79-BB19-F2DD757E0D43</string>
+</dict>
+</plist>

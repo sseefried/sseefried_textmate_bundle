@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>name</key>
+	<string>Sean Seefried’s Bundle</string>
+	<key>ordering</key>
+	<array>
+		<string>A03B5E33-41B5-4409-BA24-3588F3BDCCEE</string>
+		<string>B7C3A928-9408-4328-815A-40D310B2606F</string>
+		<string>6A23EF5A-95D9-4F79-BB19-F2DD757E0D43</string>
+		<string>CD3E5BCF-98C9-4BF1-A604-2CC8CF15D3E8</string>
+	</array>
+	<key>uuid</key>
+	<string>9E8B8115-3933-47A9-953F-3C1168E9BF39</string>
+</dict>
+</plist>
