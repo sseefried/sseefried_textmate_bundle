@@ -1,0 +1,10 @@
+You need to install this to:
+
+% cd ~/Library/Application\ Support/TextMate/Pristine\ Copy/Bundles/
+% git clone git@github.com:sseefried/sseefried_textmate_bundle
+% mv sseefried_textmate_bundle "Seans Bundle.tmbundle"
+
+Then in TextMate click on: 
+  Bundles -> Bundle Editor -> Reload Bundles
+
+
